@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/wrapper_fl"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+
+        </FrameLayout>
+        <View
+            android:id="@+id/view_line_tab"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray"
+            ></View>
+        <LinearLayout
+            android:id="@+id/rl_tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_96"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:id="@+id/btn_container_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_home_tab"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/beauty_tab_home_bg"
+                    android:onClick="onTabClicked"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="3dip"
+                    android:scaleType="matrix"
+                    android:text="首页"
+                    android:textColor="@color/beauty_main_button_text_color"
+                    android:textSize="@dimen/text_18"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_container_share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_share"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/beauty_tab_share_bg"
+                    android:onClick="onTabClicked"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="3dip"
+                    android:scaleType="matrix"
+                    android:text="发现"
+                    android:textColor="@color/beauty_main_button_text_color"
+                    android:textSize="@dimen/text_18"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_container_mess"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_mess"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/beauty_tab_mess_bg"
+                    android:onClick="onTabClicked"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="3dip"
+                    android:scaleType="matrix"
+                    android:text="商城"
+                    android:textColor="@color/beauty_main_button_text_color"
+                    android:textSize="@dimen/text_18"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_container_conversation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_profile"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/beauty_tab_profile_bg"
+                    android:onClick="onTabClicked"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="3dip"
+                    android:scaleType="matrix"
+                    android:text="我的"
+                    android:textColor="@color/beauty_main_button_text_color"
+                    android:textSize="@dimen/text_18"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ad"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

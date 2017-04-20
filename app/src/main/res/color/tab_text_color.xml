@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/text_deep_black" android:state_selected="true" />
+    <item android:color="@color/text_middle_black" />
+
+</selector>
