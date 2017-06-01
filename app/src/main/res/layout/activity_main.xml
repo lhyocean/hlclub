@@ -15,8 +15,45 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <RelativeLayout
+            android:id="@+id/main_top"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dimen_30"
+            android:paddingLeft="@dimen/dimen_30"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_88">
+
+            <TextView
+                android:layout_centerVertical="true"
+
+                android:gravity="center"
+                android:text="都会好的好的\njd"
+                android:id="@+id/text_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="@dimen/text_40"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_deep_black"
+                android:text="dsddsdsdsd-->>"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:padding="@dimen/dimen_10"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_launcher"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_80"/>
+
+
+
+        </RelativeLayout>
 
         <FrameLayout
+            android:background="#0ff"
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -79,7 +116,7 @@
                     android:paddingBottom="2dip"
                     android:paddingTop="3dip"
                     android:scaleType="matrix"
-                    android:text="发现"
+                    android:text="发布"
                     android:textColor="@color/beauty_main_button_text_color"
                     android:textSize="@dimen/text_18"
                     />
@@ -102,7 +139,7 @@
                     android:paddingBottom="2dip"
                     android:paddingTop="3dip"
                     android:scaleType="matrix"
-                    android:text="商城"
+                    android:text="便民查询"
                     android:textColor="@color/beauty_main_button_text_color"
                     android:textSize="@dimen/text_18"
                     />
@@ -129,7 +166,7 @@
                     android:paddingBottom="2dip"
                     android:paddingTop="3dip"
                     android:scaleType="matrix"
-                    android:text="我的"
+                    android:text="个人中心"
                     android:textColor="@color/beauty_main_button_text_color"
                     android:textSize="@dimen/text_18"
                     />
@@ -142,6 +179,7 @@
     </LinearLayout>
 
     <LinearLayout
+
         android:id="@+id/ll_ad"
         android:clickable="true"
         android:layout_width="wrap_content"

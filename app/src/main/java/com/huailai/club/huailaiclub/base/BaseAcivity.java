@@ -7,6 +7,8 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.view.Window;
 
+import com.huailai.club.huailaiclub.event.TestEvent;
+
 import org.haitao.common.utils.AppLog;
 
 import java.util.List;
@@ -47,7 +49,7 @@ public abstract class BaseAcivity extends FragmentActivity {
         }
     }
 
-    public void onEventMainThread() {
+    public void onEventMainThread(TestEvent event) {
 
     }
 

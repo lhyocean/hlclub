@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+import com.huailai.club.huailaiclub.event.TestEvent;
 
 import org.haitao.common.utils.AppLog;
 
@@ -68,7 +69,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-        AppLog.e(TAG, "onStop: ");
+
     }
 
     @Override
@@ -132,7 +133,7 @@ public abstract class BaseFragment extends Fragment {
 
     }
 
-    public void onEventMainThread() {
+    public void onEventMainThread(TestEvent event) {
 
     }
 }
